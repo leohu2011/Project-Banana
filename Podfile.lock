@@ -1,0 +1,51 @@
+PODS:
+  - Realm (3.13.1):
+    - Realm/Headers (= 3.13.1)
+  - Realm/Headers (3.13.1)
+  - RealmSwift (3.13.1):
+    - Realm (= 3.13.1)
+  - RxAtomic (4.4.1)
+  - RxBlocking (4.4.1):
+    - RxAtomic (~> 4.4)
+    - RxSwift (~> 4.0)
+  - RxCocoa (4.4.1):
+    - RxSwift (~> 4.0)
+  - RxSwift (4.4.1):
+    - RxAtomic (~> 4.4)
+  - RxTest (4.4.1):
+    - RxAtomic (~> 4.4)
+    - RxSwift (~> 4.0)
+  - SwiftyGif (4.2.0)
+
+DEPENDENCIES:
+  - RealmSwift
+  - RxBlocking (~> 4.0)
+  - RxCocoa (~> 4.0)
+  - RxSwift (~> 4.0)
+  - RxTest (~> 4.0)
+  - SwiftyGif
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Realm
+    - RealmSwift
+    - RxAtomic
+    - RxBlocking
+    - RxCocoa
+    - RxSwift
+    - RxTest
+    - SwiftyGif
+
+SPEC CHECKSUMS:
+  Realm: 50071da38fe079e0735e47c9f2eae738c68c5996
+  RealmSwift: 8a1e6a02b7a08cd17a31e3115143fb69fe5f3fb9
+  RxAtomic: f8d6adc1ccb87a767811269e4875887bc74dbf19
+  RxBlocking: 5508e90d36ca2304632dc9378ece4e9b5d4bf656
+  RxCocoa: 2f35a76bf8887872e28a1914112395b11b8e0e64
+  RxSwift: 92fcf68dfef21f3e2ab1965363d9e7b3d787597e
+  RxTest: f8e548755ca3c7502dc41c7d3b28802c90115a38
+  SwiftyGif: a149bf84df23370592f3f075561ae02c8632a314
+
+PODFILE CHECKSUM: ad629ed5fb9beb3cc96d58bfb59333d7d5063511
+
+COCOAPODS: 1.6.1

@@ -7,14 +7,30 @@
 //
 
 import UIKit
+import SwiftyGif
 
 class ViewController: UIViewController {
-
+    
+    let logoView = logoAnimationView()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        view.addSubview(logoView)
+        logoView.pinEdgesToSuperView()
+        logoView.logoGifImageView.delegate = self
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        logoView.logoGifImageView.startAnimatingGif()
+    }
+}
 
-
+extension ViewController: SwiftyGifDelegate {
+    func gifDidStop(sender: UIImageView) {
+        logoView.isHidden = true
+        
+//        self.navigationController?.pushViewController(<#T##viewController: UIViewController##UIViewController#>, animated: <#T##Bool#>)
+    }
 }
 
